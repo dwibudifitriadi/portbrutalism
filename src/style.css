@@ -1,0 +1,225 @@
+:root {
+    --primary: #000957;
+    --secondary: #344CB7;
+    --accent: #FFEB00;
+    --soft-blue: #577BC1;
+}
+
+.profile-section {
+    background: linear-gradient(45deg, var(--soft-blue), white);
+    border-radius: 15px;
+}
+
+.social-icon {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+.social-icon:hover {
+    transform: scale(1.2);
+    color: var(--secondary);
+}
+
+#timer {
+    font-size: 2.5rem;
+    letter-spacing: -3px;
+    color: var(--secondary);
+    text-shadow: 2px 2px 0 var(--primary);
+}
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+body {
+    background-color: var(--soft-blue);
+    color: var(--primary);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.neo-box {
+    border: 3px solid var(--primary);
+    box-shadow: 8px 8px 0 var(--secondary);
+    border-radius: 12px;
+    background: white;
+    transition: all 0.2s;
+}
+
+.neo-box:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 6px 6px 0 var(--secondary);
+}
+
+.star-badge {
+    background-color: var(--accent);
+    border: 2px solid var(--primary);
+    padding: 4px 8px;
+    border-radius: 20px;
+    color: var(--primary);
+}
+
+.profile-img {
+    width: 92px;
+    height: 92px;
+    border: 3px solid var(--primary);
+    border-radius: 8px;
+}
+
+.challenge-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.timer {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.btn-dark {
+    background-color: var(--secondary);
+    border: 2px solid var(--primary);
+    color: white;
+    border-radius: 8px;
+}
+
+.form-control {
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+}
+
+.btn {
+    border: 3px solid var(--primary) !important;
+    box-shadow: 5px 5px 0 var(--secondary) !important;
+    border-radius: 12px !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    padding: 8px 20px;
+}
+
+.btn:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 var(--secondary) !important;
+}
+
+.btn:active {
+    transform: translate(5px, 5px);
+    box-shadow: none !important;
+}
+
+.btn-primary {
+    background-color: var(--secondary) !important;
+    color: white !important;
+}
+
+.btn-accent {
+    background-color: var(--accent) !important;
+    color: var(--primary) !important;
+}
+
+.btn-ghost {
+    background-color: transparent !important;
+    color: var(--primary) !important;
+    border: 3px solid var(--primary) !important;
+}
+.neo-input {
+    border: 3px solid var(--primary) !important;
+    /* border-radius: 12px !important; */
+    box-shadow: 5px 5px 0 var(--secondary) !important;
+    transition: all 0.3s ease;
+    padding: 12px 18px !important;
+    background: white !important;
+}
+
+.neo-input:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 5px 5px 0 var(--accent) !important;
+    outline: none !important;
+}
+
+.neo-textarea {
+    border: 3px solid var(--primary) !important;
+    border-radius: 15px !important;
+    box-shadow: 5px 5px 0 var(--secondary) !important;
+    padding: 15px !important;
+    resize: vertical;
+    background: white !important;
+    transition: all 0.3s ease;
+}
+
+.neo-textarea:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 5px 5px 0 var(--accent) !important;
+}
+
+.rating-star {
+    font-size: 2rem;
+    color: var(--soft-blue);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-shadow: 2px 2px 0 var(--primary);
+}
+
+.rating-star:hover {
+    transform: scale(1.2);
+    color: var(--accent);
+}
+
+.rating-star.active {
+    color: var(--accent);
+    text-shadow: 3px 3px 0 var(--primary);
+}
+   .feedback-card {
+        border: 3px solid var(--primary);
+        border-radius: 15px;
+        box-shadow: 5px 5px 0 var(--secondary);
+        padding: 1rem;
+        background: white;
+        transition: all 0.3s ease;
+    }
+
+    .feedback-card:hover {
+        transform: translate(3px, 3px);
+        box-shadow: 3px 3px 0 var(--secondary);
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 1.5rem;
+        background-color: var(--accent);
+        border: 2px solid var(--primary);
+    }
+
+    .rating-stars {
+        color: var(--accent);
+    }
+
+    .timestamp {
+        font-size: 0.8rem;
+        color: var(--primary);
+        opacity: 0.7;
+    }
