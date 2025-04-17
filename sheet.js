@@ -12,9 +12,6 @@ function loadFeedback() {
                     <div class="col-12">
                         <div class="feedback-card">
                             <div class="d-flex align-items-center gap-3 mb-2">
-                                <div class="avatar">
-                                    ${entry.nama.charAt(0).toUpperCase()}
-                                </div>
                                 <div>
                                     <h5 class="mb-0">${entry.nama}</h5>
                                     <div class="rating-stars">
