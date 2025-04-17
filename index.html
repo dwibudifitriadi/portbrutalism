@@ -24,11 +24,11 @@
         <div class="row g-4">
             <div class="col-lg-4 col-md-6">
                 <!-- Profile Section -->
-                <div class="neo-box h-100 p-4 mb-4 profile-section">
+                <div class="neo-box  p-4 mb-4 profile-section">
                     <h2 class="mb-3">Hello Everyone 😺 🖐️</h2>
                     <p class="lead">Have fun traveling through my profile!</p>
                     <div class="neo-box challenge-card p-3">
-                        <div class="d-flex align-items-center gap-3 border-bottom ps-10">
+                        <div class="d-flex align-items-center gap-2 ps-10">
                             <img src="img/avatar.png" class="profile-img" alt="Avatar">
                             <div>
                                 <h5 class="mb-1">Dwi Budi Fitri Adi</h5>
@@ -43,8 +43,57 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="timer mt-3" id="timer">00:00:00</div>
+                        <div class="mt-3 d-flex justify-content-between gap-3">
+                            <div id="timer" class="timer"></div>
+                            <div>
+                                <button class="btn btn-accent">
+                                    <a href="https://link.dana.id/minta/2vvw9a4x7ze">Buy me <br>a <i class="fa-solid fa-mug-saucer"></i></a>
+                                </button>
+                            </div>
+                        </div>
                         <div class="text-muted">Coding Hours Today</div>
+                        
+                    </div>
+                    <center>
+                        <p class="lead">See my certificates here</p>
+                    </center>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+
+                        <div class="neo-box rating-box d-inline-block px-3 py-2 mb-2">
+                            <div class="d-flex align-items-center gap-2">
+                                <a href="https://www.sololearn.com/certificates/CC-JIHRLNCP">Java</a>
+                            </div>
+                        </div>
+                        <div class="neo-box rating-box d-inline-block px-3 py-2 mb-2">
+                            <div class="d-flex align-items-center gap-2">
+                                <a href="https://www.sololearn.com/en/certificates/CC-IVI5RMER">HTML</a>
+                            </div>
+                        </div>
+                        <div class="neo-box rating-box d-inline-block px-3 py-2 mb-2">
+                            <div class="d-flex align-items-center gap-2">
+                                <a href="https://www.sololearn.com/certificates/CC-JDOTVG0D">JavaScript</a>
+                            </div>
+                        </div>
+                        <div class="neo-box rating-box d-inline-block px-3 py-2 mb-2">
+                            <div class="d-flex align-items-center gap-2">
+                                <a href="https://www.sololearn.com/certificates/CC-NA8GPMCT">Web Dev</a>
+                            </div>
+                        </div>
+                        <div class="neo-box rating-box d-inline-block px-3 py-2 mb-2">
+                            <div class="d-flex align-items-center gap-2">
+                                <a href="https://www.sololearn.com/certificates/CC-VIWROPCP">Python</a>
+                            </div>
+                        </div>
+                        <div class="neo-box rating-box d-inline-block px-3 py-2 mb-2">
+                            <div class="d-flex align-items-center gap-2">
+                                <a href="https://www.sololearn.com/certificates/CC-GK451G1Z">SQL</a>
+                            </div>
+                        </div>
+                        <div class="neo-box rating-box d-inline-block px-3 py-2 mb-2">
+                            <div class="d-flex align-items-center gap-2">
+                                <a href="https://www.sololearn.com/certificates/CC-G73VDC4I">CSS</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -59,8 +108,8 @@
                         </h1>
 
                         <p class="lead mb-4">
-                            Comprehensive branding solutions that help fashion,<br>
-                            lifestyle, and luxury brands connect with their target<br>
+                            Comprehensive branding solutions that help fashion,
+                            lifestyle, and luxury brands connect with their target
                             audience through cutting-edge web experiences.
                         </p>
 
@@ -80,7 +129,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
-                <div class="neo-box h-100 p-4 mb-4 profile-section">
+                <div class="neo-box p-4 mb-4 profile-section">
                     <div class="text-md-start">
                         <h1 class="display-4 fw-bold mb-3">
                             <span class="d-block">Digital Alchemist</span>
@@ -92,19 +141,17 @@
                         </p>
 
                         <div class="neo-box rating-box d-inline-block px-3 py-2 mb-2">
-                            <div class="d-flex ">
+                            <div class="">
                                 <span class="fw-bold">📚 Academia</span>
-                                <span class="fw-bold">⚡ Tech Explorer</span>
                                 <span class="fw-bold">🌐 24/7 Learner</span>
                               </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
-
-
         </div>
-        <div class="row g-4 mt-0">
+        <div class="row g-4">
             <div class="col-lg-12">
                 <div class="row g-4">
                     <div class="col-lg-8">
@@ -149,7 +196,7 @@
         
                                     <!-- Submit Button -->
                                     <div class="d-flex justify-content-end">
-                                        <button type="submit" class="btn btn-primary">
+                                        <button type="submit" class="btn btn-accent">
                                             <i class="fa-solid fa-paper-plane me-2"></i>Submit Feedback
                                         </button>
                                     </div>
@@ -161,15 +208,11 @@
                 <div class="col-lg-12 mt-4">
                     <div class="neo-box p-4">
                         <h3 class="mb-3"><i class="fa-solid fa-list me-2"></i>List of Feedback</h3>
-                        <div id="feedbackList" class="row g-3">
-                            <!-- Data dari Sheet akan dimuat di sini -->
-                        </div>
+                        <div id="feedbackList" class="row g-3"></div>
+                        <div id="pagination" class="pagination mt-3"></div>
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     </div>
 
