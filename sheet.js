@@ -60,15 +60,64 @@ function createPagination() {
     const totalPages = Math.ceil(allFeedback.length / itemsPerPage);
     const pagination = document.getElementById('pagination');
     pagination.innerHTML = '';
-    
-    for(let i = 1; i <= totalPages; i++) {
-        pagination.innerHTML += `
-            <button class="page-btn ${i === currentPage ? 'active' : ''}" 
-                    onclick="changePage(${i})">
-                ${i}
-            </button>
-        `;
+
+    // Previous Button
+    const prevDisabled = currentPage === 1 ? 'disabled' : '';
+    pagination.innerHTML += `
+        <button class="page-btn" ${prevDisabled} onclick="changePage(${currentPage - 1})">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+    `;
+
+    // Page Numbers with Ellipsis
+    const visiblePages = [];
+    const maxVisible = 2; // Jumlah halaman yang ditampilkan di sekitar current page
+
+    // Tambahkan halaman pertama
+    if (currentPage > maxVisible + 1) {
+        visiblePages.push(1);
+        if (currentPage > maxVisible + 2) {
+            visiblePages.push('...');
+        }
     }
+
+    // Tambahkan halaman sekitar current page
+    const start = Math.max(1, currentPage - maxVisible);
+    const end = Math.min(totalPages, currentPage + maxVisible);
+    
+    for (let i = start; i <= end; i++) {
+        visiblePages.push(i);
+    }
+
+    // Tambahkan halaman terakhir
+    if (currentPage < totalPages - maxVisible) {
+        if (currentPage < totalPages - maxVisible - 1) {
+            visiblePages.push('...');
+        }
+        visiblePages.push(totalPages);
+    }
+
+    // Render page numbers
+    visiblePages.forEach(page => {
+        if (page === '...') {
+            pagination.innerHTML += `<span class="ellipsis">...</span>`;
+        } else {
+            const active = page === currentPage ? 'active' : '';
+            pagination.innerHTML += `
+                <button class="page-btn ${active}" onclick="changePage(${page})">
+                    ${page}
+                </button>
+            `;
+        }
+    });
+
+    // Next Button
+    const nextDisabled = currentPage === totalPages ? 'disabled' : '';
+    pagination.innerHTML += `
+        <button class="page-btn" ${nextDisabled} onclick="changePage(${currentPage + 1})">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    `;
 }
 function generateStars(rating) {
     let stars = '';
